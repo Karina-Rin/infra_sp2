@@ -1,8 +1,8 @@
 FROM python:3.7-slim
 
-RUN mkdir /app
+WORKDIR /app/
 
-WORKDIR /app/api_yamdb
+RUN mkdir /app
 
 COPY requirements.txt /app
 
